@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #14213d;
+            overflow: hidden;
+
+            /* Logo-inspired background */
+            background:
+                radial-gradient(circle at 15% 20%,
+                    rgba(0, 112, 192, 0.20),
+                    transparent 30%),
+                radial-gradient(circle at 85% 75%,
+                    rgba(244, 126, 32, 0.14),
+                    transparent 28%),
+                linear-gradient(135deg,
+                    #f5f9fc 0%,
+                    #ffffff 45%,
+                    #eef6fc 100%);
+        }
+
+        /* Decorative tech background */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.35;
+
+            background-image:
+                linear-gradient(rgba(0, 112, 192, 0.08) 1px,
+                    transparent 1px),
+                linear-gradient(90deg,
+                    rgba(0, 112, 192, 0.08) 1px,
+                    transparent 1px);
+
+            background-size: 55px 55px;
+
+            mask-image: linear-gradient(to bottom,
+                    transparent,
+                    black 25%,
+                    black 75%,
+                    transparent);
+        }
+
+        /* Decorative circles */
+        .bg-circle {
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            filter: blur(1px);
+        }
+
+        .circle-blue {
+            width: 420px;
+            height: 420px;
+            left: -230px;
+            top: -170px;
+            border: 1px solid rgba(0, 112, 192, 0.18);
+            box-shadow:
+                0 0 100px rgba(0, 112, 192, 0.12),
+                inset 0 0 80px rgba(0, 112, 192, 0.06);
+        }
+
+        .circle-orange {
+            width: 360px;
+            height: 360px;
+            right: -190px;
+            bottom: -160px;
+            border: 1px solid rgba(244, 126, 32, 0.18);
+            box-shadow:
+                0 0 100px rgba(244, 126, 32, 0.10),
+                inset 0 0 80px rgba(244, 126, 32, 0.05);
+        }
+
+        /* Main card */
+        .thank-you {
+            position: relative;
+            z-index: 5;
+
+            width: calc(100% - 40px);
+            max-width: 680px;
+
+            padding: 55px 45px;
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid rgba(0, 112, 192, 0.12);
+            border-radius: 24px;
+
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+
+            box-shadow:
+                0 30px 80px rgba(0, 51, 90, 0.12),
+                0 5px 25px rgba(0, 112, 192, 0.06);
+        }
+
+        /* Small top accent */
+        .accent {
+            width: 70px;
+            height: 4px;
+            margin: 0 auto 30px;
+
+            border-radius: 20px;
+
+            background: linear-gradient(90deg,
+                    #0070c0,
+                    #f47e20);
+        }
+
+        /* Logo */
+        .logo {
+            width: 185px;
+            max-width: 70%;
+            height: auto;
+
+            display: block;
+            margin: 0 auto 32px;
+        }
+
+        /* Success icon */
+        .success-icon {
+            width: 76px;
+            height: 76px;
+
+            margin: 0 auto 25px;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(135deg,
+                    #0070c0,
+                    #00518d);
+
+            box-shadow:
+                0 12px 30px rgba(0, 112, 192, 0.25),
+                0 0 0 8px rgba(0, 112, 192, 0.06);
+        }
+
+        .success-icon svg {
+            width: 38px;
+            height: 38px;
+
+            fill: none;
+            stroke: white;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 54px;
+            line-height: 1.1;
+            font-weight: 700;
+
+            margin-bottom: 18px;
+
+            color: #14213d;
+        }
+
+        h1 span {
+            color: #0070c0;
+        }
+
+        /* Message */
+        .message {
+            max-width: 540px;
+
+            margin: 0 auto 32px;
+
+            font-size: 18px;
+            line-height: 1.7;
+
+            color: #5d6b7e;
+        }
+
+        .message strong {
+            color: #14213d;
+        }
+
+        /* WhatsApp */
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            padding: 15px 27px;
+
+            border-radius: 9px;
+
+            background: #25D366;
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 16px;
+            font-weight: 600;
+
+            box-shadow:
+                0 10px 25px rgba(37, 211, 102, 0.20);
+
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 15px 32px rgba(37, 211, 102, 0.30);
+        }
+
+        .whatsapp-btn svg {
+            width: 21px;
+            height: 21px;
+            fill: currentColor;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 35px;
+
+            font-size: 12px;
+            color: #91a0af;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+
+            body {
+                overflow-y: auto;
+            }
+
+            .thank-you {
+                width: calc(100% - 28px);
+                padding: 40px 22px;
+                border-radius: 20px;
+            }
+
+            .logo {
+                width: 155px;
+                margin-bottom: 28px;
+            }
+
+            .success-icon {
+                width: 65px;
+                height: 65px;
+            }
+
+            .success-icon svg {
+                width: 32px;
+                height: 32px;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .message {
+                font-size: 16px;
+            }
+
+            .whatsapp-btn {
+                width: 100%;
+                max-width: 290px;
+            }
+        }
+    </style>
+    <title>Thank You | CNCWEB WORLD</title>
+    <meta name="description" content="Thank you for contacting
+      CNCWEB WORLD.
+      Your request has been successfully received.
+      Our team will get back to you shortly.">
+    <meta property="og:title" content="Thank You | CNCWEB WORLD">
+    <meta property="og:description" content="Thank you for contacting
+      CNCWEB WORLD.
+      Your request has been successfully received.
+      Our team will get back to you shortly.">
+    <meta property="og:image"
+        content="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/547ed57b95932417c9ddb23c52bb9a59-547ed57b95932417c9ddb23c52bb9a59-logo.webp">
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="bg-circle circle-blue"></div>
+    <div class="bg-circle circle-orange"></div>
+
+
+    <!-- Thank You Content -->
+    <div class="thank-you">
+
+        <div class="accent"></div>
+
+        <!-- CNCWEB WORLD Logo -->
+        <img src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/547ed57b95932417c9ddb23c52bb9a59-547ed57b95932417c9ddb23c52bb9a59-logo.webp"
+            alt="CNCWEB WORLD" class="logo">
+
+
+        <!-- Success -->
+        <div class="success-icon">
+
+            <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+
+        </div>
+
+
+        <!-- Heading -->
+        <h1>
+            Thank <span>You!</span>
+        </h1>
+
+
+        <!-- Message -->
+        <p class="message">
+            Thank you for contacting
+            <strong>CNCWEB WORLD.</strong>
+            Your request has been successfully received.
+            Our team will get back to you shortly.
+        </p>
+
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/917400332999?text=Hello%20CNCWEB%20WORLD,%20I%20have%20submitted%20an%20enquiry."
+            target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+
+            <svg viewBox="0 0 24 24">
+                <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0
+                C5.5 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24
+                l6.4-1.7c1.7.9 3.6 1.4 5.6 1.4h.1
+                c6.5 0 11.8-5.3 11.8-11.9
+                0-3.1-1.2-6.1-3.4-8.3ZM12.1 21.7
+                c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.8 1
+                1-3.7-.2-.4c-1-1.5-1.5-3.3-1.5-5.1
+                0-5.4 4.4-9.8 9.8-9.8
+                2.6 0 5.1 1 6.9 2.9
+                1.8 1.9 2.8 4.3 2.8 6.9
+                0 5.4-4.4 9.8-9.9 9.8Z"></path>
+
+                <path d="M17.5 14.6c-.3-.2-1.8-.9-2.1-1
+                -.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2
+                -.2.2-.3.2-.6.1-1.5-.7-2.5-1.3
+                -3.5-2.9-.3-.5.3-.5.8-1.6
+                .1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3
+                -.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4
+                -.3.3-1.1 1.1-1.1 2.7
+                0 1.6 1.1 3.1 1.3 3.3
+                .2.2 2.2 3.4 5.3 4.7
+                .7.3 1.2.5 1.6.6
+                .7.2 1.3.2 1.8.1
+                .6-.1 1.8-.7 2.1-1.4
+                .3-.7.3-1.3.2-1.4
+                -.1-.1-.3-.2-.6-.3Z"></path>
+            </svg>
+
+            Chat with us on WhatsApp
+
+        </a>
+
+
+        <div class="footer">
+            © 2026 CNCWEB WORLD. All Rights Reserved.
+        </div>
+
+    </div>
+
+
+    <script data-reveal-fix="">
+        (function () {
+            var SEL = '.reveal,[data-sa-reveal],[data-reveal],[data-animate],[data-aos],[data-scroll],.scroll-reveal,.fade-in-section,.animate-on-scroll,.reveal-on-scroll';
+            var CLASSES = ['visible', 'sa-visible', 'aos-animate', 'in-view', 'is-visible', 'active', 'show', 'animated'];
+            function revealAll() {
+                try {
+                    document.querySelectorAll(SEL).forEach(function (el) {
+                        for (var i = 0; i < CLASSES.length; i++) el.classList.add(CLASSES[i]);
+                    });
+                } catch (e) { }
+            }
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', revealAll);
+            else revealAll();
+            setTimeout(revealAll, 150);
+            setTimeout(revealAll, 500);
+        })();
+    </script>
+
+
+</body>
+
+</html>

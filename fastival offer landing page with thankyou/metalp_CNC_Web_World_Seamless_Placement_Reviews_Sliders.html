@@ -1,0 +1,3337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT Courses in Nerul | Job-Ready Training with 100% Placement Assistance | CNC Web World</title>
+  <meta name="description"
+    content="Learn Java, Python, MERN, Data Analytics, AI/ML, Cyber Security & more with one-on-one practical training at CNC Web World, Nerul. Book your FREE demo class today.">
+  <meta name="theme-color" content="#0b1230">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <style>
+    /* ============ CNC Web World — Facebook Ads Landing Page ============ */
+    :root {
+      --navy: #0b1230;
+      --navy-2: #111b45;
+      --blue: #2f6bff;
+      --cyan: #22d3ee;
+      --orange: #ff7a1a;
+      --orange-2: #ff9f43;
+      --green: #25d366;
+      --ink: #16203f;
+      --muted: #6b7491;
+      --bg: #f5f7ff;
+      --card: #ffffff;
+      --radius: 20px;
+      --shadow: 0 20px 50px -20px rgba(20, 35, 100, .25);
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background: #fff;
+      overflow-x: hidden;
+      padding-bottom: 0
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Space Grotesk', 'Poppins', sans-serif;
+      font-weight: 700;
+      letter-spacing: -.01em
+    }
+
+    a {
+      text-decoration: none
+    }
+
+    img {
+      max-width: 100%
+    }
+
+    .container-fluid {
+      width: min(1460px, 96%);
+      margin: auto
+    }
+
+    .section-pad {
+      padding: 90px 0
+    }
+
+    @media(max-width:767px) {
+      .section-pad {
+        padding: 60px 0
+      }
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, var(--cyan), var(--blue) 50%, #8b5cf6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    .hero .gradient-text {
+      background: linear-gradient(90deg, var(--cyan), #7aa2ff, #c4b5fd);
+      -webkit-background-clip: text;
+      background-clip: text
+    }
+
+    /* ---------- Scroll progress ---------- */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      width: 0;
+      background: linear-gradient(90deg, var(--orange), var(--cyan));
+      z-index: 2000;
+      transition: width .1s linear
+    }
+
+
+    /* ---------- 10% OFF offer banner ---------- */
+    .offer-banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1080;
+      /* min-height: 48px; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 8px 14px;
+      color: #fff;
+      text-align: center;
+      background: linear-gradient(100deg, #ff6b00, #ff9f1c, #ff6b00);
+      background-size: 200% 100%;
+      animation: offerGradient 6s ease-in-out infinite, offerEntrance .7s ease-out both;
+      box-shadow: 0 5px 18px rgba(255, 106, 0, .25);
+      font-size: .9rem;
+      line-height: 1.3;
+    }
+
+    .offer-banner strong {
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+
+    .offer-banner .offer-timer {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .offer-banner .time-unit {
+      padding: 3px 6px;
+      border-radius: 5px;
+      background: rgba(11, 18, 48, .22);
+    }
+
+    @keyframes offerGradient {
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    @keyframes offerEntrance {
+      from {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .site-nav {
+      top: 40px;
+    }
+
+    @media (max-width: 575.98px) {
+      .offer-banner {
+        gap: 5px 9px;
+        padding: 8px 10px;
+        font-size: .76rem;
+      }
+
+      .offer-banner .time-unit {
+        padding: 2px 4px;
+      }
+
+      .site-nav {
+        top: 50px;
+      }
+
+      .site-nav.scrolled {
+        top: 50px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .offer-banner {
+        animation: none;
+      }
+    }
+
+    /* ---------- Navbar ---------- */
+    .site-nav {
+      padding: 14px 0;
+      transition: all .3s ease;
+      background: transparent
+    }
+
+    .site-nav.scrolled {
+      background: rgba(11, 18, 48, .92);
+      backdrop-filter: blur(12px);
+      padding: 8px 0;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .25)
+    }
+
+    .brand-logo {
+      height: 48px;
+      width: auto;
+      max-width: 200px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 10px;
+      padding: 4px 8px
+    }
+
+    .site-nav .nav-link {
+      color: rgba(255, 255, 255, .85);
+      font-weight: 500;
+      position: relative
+    }
+
+    .site-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 2px;
+      height: 2px;
+      background: var(--orange);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .3s
+    }
+
+    .site-nav .nav-link:hover {
+      color: #fff
+    }
+
+    .site-nav .nav-link:hover::after {
+      transform: scaleX(1)
+    }
+
+    @media(max-width:991px) {
+      .site-nav {
+        background: rgba(11, 18, 48, .95)
+      }
+
+      .site-nav .navbar-collapse {
+        padding: 14px 0
+      }
+    }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      font-weight: 600;
+      border-radius: 50px;
+      transition: transform .25s, box-shadow .25s
+    }
+
+    .btn-cta {
+      background: linear-gradient(135deg, var(--orange), var(--orange-2));
+      color: #fff;
+      border: none;
+      box-shadow: 0 10px 30px -8px rgba(255, 122, 26, .7);
+      padding: 10px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .btn-cta:hover {
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px -8px rgba(255, 122, 26, .85)
+    }
+
+    .btn-cta::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -80%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .55), transparent);
+      transform: skewX(-20deg);
+      animation: shine 3.2s infinite
+    }
+
+    @keyframes shine {
+      0% {
+        left: -80%
+      }
+
+      60%,
+      100% {
+        left: 140%
+      }
+    }
+
+    .btn-wa {
+      background: var(--green);
+      color: #fff;
+      border: none;
+      box-shadow: 0 10px 30px -10px rgba(37, 211, 102, .8)
+    }
+
+    .btn-wa:hover {
+      color: #fff;
+      transform: translateY(-3px);
+      background: #1fbf5b
+    }
+
+    .pulse-btn {
+      animation: pulse 2.2s infinite
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 122, 26, .6)
+      }
+
+      70% {
+        box-shadow: 0 0 0 18px rgba(255, 122, 26, 0)
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 122, 26, 0)
+      }
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      padding: 130px 0 90px;
+      color: #fff;
+      background: radial-gradient(1200px 600px at 80% -10%, #1d2f7a 0%, transparent 60%), linear-gradient(160deg, var(--navy) 0%, #0e1a4f 100%);
+      overflow: hidden;
+      display: flex;
+      align-items: center
+    }
+
+    .grid-overlay {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(circle at 50% 40%, #000 20%, transparent 75%);
+      -webkit-mask-image: radial-gradient(circle at 50% 40%, #000 20%, transparent 75%)
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: .55;
+      animation: blob 14s ease-in-out infinite
+    }
+
+    .blob-1 {
+      width: 420px;
+      height: 420px;
+      background: var(--blue);
+      top: -120px;
+      left: -100px
+    }
+
+    .blob-2 {
+      width: 360px;
+      height: 360px;
+      background: var(--orange);
+      bottom: -120px;
+      right: 10%;
+      opacity: .35;
+      animation-delay: -4s
+    }
+
+    .blob-3 {
+      width: 300px;
+      height: 300px;
+      background: var(--cyan);
+      top: 40%;
+      left: 45%;
+      opacity: .25;
+      animation-delay: -8s
+    }
+
+    @keyframes blob {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1)
+      }
+
+      33% {
+        transform: translate(40px, -30px) scale(1.1)
+      }
+
+      66% {
+        transform: translate(-30px, 40px) scale(.95)
+      }
+    }
+
+    .float-chip {
+      position: absolute;
+      padding: 8px 16px;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .2);
+      backdrop-filter: blur(8px);
+      font-weight: 600;
+      font-size: .85rem;
+      animation: floaty 6s ease-in-out infinite;
+      z-index: 1
+    }
+
+    .chip-1 {
+      top: 14%;
+      left: 3%
+    }
+
+    .chip-2 {
+      top: 30%;
+      right: 6%;
+      animation-delay: -2s
+    }
+
+    .chip-3 {
+      bottom: 14%;
+      left: 8%;
+      animation-delay: -3s
+    }
+
+    .chip-4 {
+      bottom: 22%;
+      right: 42%;
+      animation-delay: -1s
+    }
+
+    @keyframes floaty {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(-2deg)
+      }
+
+      50% {
+        transform: translateY(-18px) rotate(2deg)
+      }
+    }
+
+    @media(max-width:991px) {
+      .float-chip {
+        display: none
+      }
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .2);
+      font-size: .82rem;
+      font-weight: 500;
+      margin-bottom: 22px
+    }
+
+    .badge-pill .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #34e07d;
+      box-shadow: 0 0 0 0 rgba(52, 224, 125, .7);
+      animation: ping 1.6s infinite
+    }
+
+    @keyframes ping {
+      0% {
+        box-shadow: 0 0 0 0 rgba(52, 224, 125, .7)
+      }
+
+      100% {
+        box-shadow: 0 0 0 12px rgba(52, 224, 125, 0)
+      }
+    }
+
+    .hero-title {
+      font-size: clamp(2.1rem, 4.6vw, 3.7rem);
+      line-height: 1.12;
+      margin-bottom: 20px
+    }
+
+    .caret {
+      color: var(--orange);
+      animation: blink 1s steps(1) infinite;
+      font-weight: 400
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0
+      }
+    }
+
+    .underline-anim {
+      position: relative;
+      display: inline-block;
+      color: #fff
+    }
+
+    .underline-anim::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      height: 8px;
+      width: 100%;
+      background: linear-gradient(90deg, var(--orange), var(--orange-2));
+      border-radius: 6px;
+      z-index: -1;
+      opacity: .85;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: underline 1s .8s forwards
+    }
+
+    @keyframes underline {
+      to {
+        transform: scaleX(1)
+      }
+    }
+
+    .hero-sub {
+      font-size: 1.08rem;
+      color: rgba(255, 255, 255, .82);
+      max-width: 600px;
+      margin-bottom: 22px
+    }
+
+    .hero-sub strong {
+      color: #fff
+    }
+
+    .hero-points {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 28px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 18px;
+      max-width: 560px
+    }
+
+    .hero-points li {
+      font-weight: 500;
+      font-size: .95rem;
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .hero-points i {
+      color: #34e07d
+    }
+
+    @media(max-width:575px) {
+      .hero-points {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .trust-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 30px
+    }
+
+    .avatars {
+      display: flex
+    }
+
+    .avatars span {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      border: 2px solid var(--navy);
+      margin-left: -10px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #fff
+    }
+
+    .avatars span:first-child {
+      margin-left: 0
+    }
+
+    .avatars span:nth-child(2) {
+      background: linear-gradient(135deg, var(--orange), var(--orange-2))
+    }
+
+    .avatars span:nth-child(3) {
+      background: linear-gradient(135deg, #8b5cf6, #c4b5fd)
+    }
+
+    .avatars span:nth-child(4) {
+      background: linear-gradient(135deg, #10b981, #6ee7b7)
+    }
+
+    .stars {
+      color: #ffc933;
+      font-size: .85rem;
+      letter-spacing: 2px
+    }
+
+    .trust-row small {
+      color: rgba(255, 255, 255, .75)
+    }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 26px;
+      height: 42px;
+      border: 2px solid rgba(255, 255, 255, .5);
+      border-radius: 20px;
+      justify-content: center;
+      padding-top: 8px
+    }
+
+    .scroll-hint span {
+      width: 4px;
+      height: 8px;
+      border-radius: 4px;
+      background: #fff;
+      animation: scrollDot 1.6s infinite
+    }
+
+    @keyframes scrollDot {
+      0% {
+        transform: translateY(0);
+        opacity: 1
+      }
+
+      100% {
+        transform: translateY(16px);
+        opacity: 0
+      }
+    }
+
+    /* ---------- Form card ---------- */
+    .form-card {
+      position: relative;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 24px;
+      padding: 34px 28px 26px;
+      box-shadow: 0 30px 70px -20px rgba(0, 0, 0, .55);
+      border-top: 5px solid var(--orange)
+    }
+
+    .form-ribbon {
+      position: absolute;
+      top: -16px;
+      right: 20px;
+      background: var(--orange);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: .75rem;
+      font-weight: 600;
+      box-shadow: 0 8px 20px -6px rgba(255, 122, 26, .7)
+    }
+
+    .form-card .form-label {
+      font-weight: 600;
+      font-size: .85rem;
+      margin-bottom: 4px
+    }
+
+    .form-card .input-group-text {
+      background: #f0f3ff;
+      border: 1px solid #dfe5ff;
+      color: var(--blue)
+    }
+
+    .form-card .form-control,
+    .form-card .form-select {
+      border: 1px solid #dfe5ff;
+      padding: 12px;
+      font-size: .95rem
+    }
+
+    .form-card .form-control:focus,
+    .form-card .form-select:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 .2rem rgba(47, 107, 255, .15)
+    }
+
+    .form-note {
+      text-align: center;
+      font-size: .78rem;
+      color: var(--muted);
+      margin: 12px 0 0
+    }
+
+    .form-note i {
+      color: var(--green)
+    }
+
+    .success-box {
+      text-align: center;
+      padding: 10px 0
+    }
+
+    .success-icon {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      font-size: 2.4rem;
+      display: grid;
+      place-items: center;
+      animation: pop .5s cubic-bezier(.2, 1.6, .4, 1)
+    }
+
+    @keyframes pop {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* ---------- Marquee ---------- */
+    .marquee-wrap {
+      background: var(--orange);
+      overflow: hidden;
+      padding: 14px 0;
+      transform: rotate(-1deg) scale(1.02);
+      margin: -14px 0 0;
+      position: relative;
+      z-index: 3;
+      box-shadow: 0 10px 30px -10px rgba(255, 122, 26, .6)
+    }
+
+    .marquee-track {
+      display: inline-flex;
+      gap: 46px;
+      white-space: nowrap;
+      animation: marquee 28s linear infinite;
+      will-change: transform
+    }
+
+    .marquee-track span {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      display: inline-flex;
+      align-items: center;
+      gap: 46px
+    }
+
+    .marquee-track span::after {
+      content: "✦";
+      opacity: .7
+    }
+
+    @keyframes marquee {
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    /* ---------- Section head ---------- */
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 50px;
+      background: rgba(47, 107, 255, .1);
+      color: var(--blue);
+      font-weight: 600;
+      font-size: .8rem;
+      letter-spacing: .08em;
+      text-transform: uppercase
+    }
+
+    .section-head {
+      max-width: 700px;
+      margin: 0 auto 50px
+    }
+
+    .section-head h2,
+    .why h2 {
+      font-size: clamp(1.8rem, 3.4vw, 2.7rem);
+      margin: 14px 0 10px
+    }
+
+    .section-head p {
+      color: var(--muted)
+    }
+
+    /* ---------- Stats ---------- */
+    .stats {
+      background: var(--bg);
+      padding-top: 100px
+    }
+
+    .stat-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 30px 16px;
+      box-shadow: var(--shadow);
+      transition: transform .3s;
+      height: 100%
+    }
+
+    .stat-card:hover {
+      transform: translateY(-8px)
+    }
+
+    .stat-card>i {
+      font-size: 2rem;
+      color: var(--blue);
+      display: block;
+      margin-bottom: 8px
+    }
+
+    .stat-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.1
+    }
+
+    .stat-text {
+      font-size: 1.4rem;
+      padding: .55rem 0
+    }
+
+    .stat-card p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-weight: 500
+    }
+
+    /* ---------- Courses ---------- */
+    .course-card {
+      position: relative;
+      background: #fff;
+      border: 1px solid #e8ecff;
+      border-radius: var(--radius);
+      padding: 50px 26px 26px 26px;
+      height: 100%;
+      transition: all .35s;
+      overflow: hidden
+    }
+
+    .course-card .ai-powered-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 50px;
+      background: #fff1e6;
+      color: var(--orange);
+      font-size: .7rem;
+      font-weight: 700;
+      line-height: 1.4;
+      z-index: 3;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-5px);
+      transition: opacity .3s ease, transform .3s ease, visibility .3s ease;
+      pointer-events: none;
+    }
+
+    .course-card:hover .ai-powered-tag,
+    .course-card:focus-within .ai-powered-tag {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .course-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--blue), #8b5cf6);
+      opacity: 0;
+      transition: opacity .35s;
+      z-index: 0
+    }
+
+    .course-card>* {
+      position: relative;
+      z-index: 1;
+      transition: color .3s
+    }
+
+    .course-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 24px 50px -18px rgba(47, 107, 255, .55);
+      border-color: transparent
+    }
+
+    .course-card:hover::before {
+      opacity: 1
+    }
+
+    .course-card:hover h3,
+    .course-card:hover p,
+    .course-card:hover .course-link {
+      color: #fff
+    }
+
+    .course-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      font-size: 1.7rem;
+      background: linear-gradient(135deg, rgba(47, 107, 255, .12), rgba(139, 92, 246, .15));
+      color: var(--blue);
+      margin-bottom: 18px;
+      transition: all .35s
+    }
+
+    .course-card:hover .course-icon {
+      background: rgba(255, 255, 255, .2);
+      color: #fff;
+      transform: rotate(-8deg) scale(1.08)
+    }
+
+    .course-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px
+    }
+
+    .course-card p {
+      color: var(--muted);
+      font-size: .92rem;
+      margin-bottom: 16px
+    }
+
+    .course-link {
+      font-weight: 600;
+      color: var(--orange);
+      display: inline-flex;
+      gap: 6px;
+      align-items: center
+    }
+
+    .course-link i {
+      transition: transform .25s
+    }
+
+    .course-card:hover .course-link i {
+      transform: translateX(6px)
+    }
+
+    .hot-tag {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #fff1e6;
+      color: var(--orange);
+      font-size: .7rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 50px;
+      z-index: 2
+    }
+
+    .course-card:hover .hot-tag {
+      background: rgba(255, 255, 255, .25);
+      color: #fff
+    }
+
+    /* ---------- Why ---------- */
+    .why {
+      background: linear-gradient(180deg, #fff, var(--bg))
+    }
+
+    .lead-text {
+      color: var(--muted);
+      margin: 14px 0 20px
+    }
+
+    .feature-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      height: 100%;
+      border-left: 4px solid var(--blue);
+      transition: all .3s
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      border-left-color: var(--orange)
+    }
+
+    .feature-card i {
+      font-size: 1.8rem;
+      color: var(--blue);
+      display: block;
+      margin-bottom: 8px
+    }
+
+    .feature-card h4 {
+      font-size: 1.05rem;
+      margin-bottom: 4px
+    }
+
+    .feature-card p {
+      font-size: .88rem;
+      color: var(--muted);
+      margin: 0
+    }
+
+    /* ---------- Process ---------- */
+    .steps {
+      position: relative
+    }
+
+    .step {
+      text-align: center;
+      padding: 28px 20px;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      height: 100%;
+      position: relative
+    }
+
+    .step-no {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      background: linear-gradient(135deg, var(--blue), #8b5cf6);
+      box-shadow: 0 10px 24px -8px rgba(47, 107, 255, .7)
+    }
+
+    .step h4 {
+      font-size: 1.1rem
+    }
+
+    .step p {
+      font-size: .9rem;
+      color: var(--muted);
+      margin: 0
+    }
+
+    /* Process flow: horizontal arrows on desktop, vertical flow on tablet/mobile */
+    @media(min-width:992px) {
+      .steps .col-lg-3:not(:last-child) .step::after {
+        content: "→";
+        position: absolute;
+        right: -26px;
+        top: 50%;
+        font-size: 1.6rem;
+        color: var(--orange);
+        z-index: 2
+      }
+    }
+
+    @media(max-width:991.98px) {
+      .steps>[class*="col-"] {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+
+      .steps .col-lg-3:not(:last-child) .step::after {
+        content: "↓";
+        position: absolute;
+        left: 50%;
+        bottom: -31px;
+        top: auto;
+        right: auto;
+        transform: translateX(-50%);
+        font-size: 1.6rem;
+        line-height: 1;
+        color: var(--orange);
+        z-index: 2;
+      }
+
+      .steps .step {
+        padding: 26px 20px;
+      }
+    }
+
+    /* ---------- CTA band ---------- */
+    .cta-band {
+      position: relative;
+      padding: 80px 0;
+      color: #fff;
+      background: linear-gradient(120deg, var(--blue), #6d4cff 55%, #8b5cf6);
+      overflow: hidden
+    }
+
+    .cta-band::before,
+    .cta-band::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .1)
+    }
+
+    .cta-band::before {
+      width: 380px;
+      height: 380px;
+      top: -160px;
+      left: -100px;
+      animation: floaty 9s infinite
+    }
+
+    .cta-band::after {
+      width: 300px;
+      height: 300px;
+      bottom: -140px;
+      right: -60px;
+      animation: floaty 11s infinite reverse
+    }
+
+    .cta-band h2 {
+      font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+      margin-bottom: 10px
+    }
+
+    .cta-band p {
+      opacity: .9;
+      margin-bottom: 26px
+    }
+
+    .cta-band .container-fluid {
+      position: relative;
+      z-index: 1
+    }
+
+    /* ---------- Gallery ---------- */
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      transition: transform .35s, box-shadow .35s;
+      background: #eef1ff;
+      min-height: 140px
+    }
+
+    .gallery img:hover {
+      transform: scale(1.04) rotate(-.5deg);
+      box-shadow: 0 26px 50px -16px rgba(47, 107, 255, .5)
+    }
+
+    .reviews {
+      background: var(--bg)
+    }
+
+
+
+    /* ---------- Placement and review image sliders ---------- */
+    .image-carousel {
+      --carousel-gap: 12px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      min-width: 0;
+    }
+
+    .carousel-viewport {
+      width: 100%;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      align-items: stretch;
+      gap: var(--carousel-gap);
+      transition: transform .45s ease;
+      will-change: transform;
+    }
+
+    .gallery-slide {
+      flex: 0 0 calc((100% - (var(--carousel-gap) * 2)) / 3);
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 16px;
+      background: #eef1ff;
+    }
+
+    .gallery-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-height: 360px;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      background: #eef1ff;
+    }
+
+    .carousel-btn {
+      flex: 0 0 42px;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border: 0;
+      border-radius: 50%;
+      color: #fff;
+      background: linear-gradient(135deg, var(--blue), var(--navy));
+      box-shadow: 0 6px 18px rgba(11, 18, 48, .2);
+      cursor: pointer;
+      z-index: 2;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .carousel-btn:hover {
+      background: linear-gradient(135deg, var(--orange), var(--orange-2));
+      transform: scale(1.05);
+    }
+
+    .carousel-btn i {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    @media (max-width: 991.98px) {
+      .image-carousel {
+        --carousel-gap: 10px;
+        gap: 8px;
+      }
+
+      .gallery-slide {
+        flex-basis: calc((100% - var(--carousel-gap)) / 2);
+      }
+
+      .gallery-slide img {
+        max-height: 320px;
+      }
+
+      .carousel-btn {
+        flex-basis: 38px;
+        width: 38px;
+        height: 38px;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .image-carousel {
+        --carousel-gap: 8px;
+        gap: 6px;
+      }
+
+      .gallery-slide {
+        flex-basis: 100%;
+      }
+
+      .gallery-slide img {
+        max-height: 420px;
+      }
+
+      .carousel-btn {
+        flex-basis: 32px;
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .carousel-track {
+        transition: none;
+      }
+    }
+
+    /* ---------- FAQ ---------- */
+    .accordion-item {
+      border: 1px solid #e8ecff;
+      border-radius: 16px !important;
+      margin-bottom: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px -12px rgba(20, 35, 100, .25)
+    }
+
+    .accordion-button {
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      padding: 18px 22px
+    }
+
+    .accordion-button:not(.collapsed) {
+      background: rgba(47, 107, 255, .08);
+      color: var(--blue);
+      box-shadow: none
+    }
+
+    .accordion-button:focus {
+      box-shadow: none
+    }
+
+    .accordion-body {
+      color: var(--muted)
+    }
+
+    /* ---------- Footer ---------- */
+    .site-footer {
+      background: var(--navy);
+      color: rgba(255, 255, 255, .75);
+      padding: 50px 0 100px
+    }
+
+    .footer-logo {
+      height: 54px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 5px 10px
+    }
+
+    @media(min-width:992px) {
+      .site-footer {
+        padding-bottom: 50px
+      }
+    }
+
+    /* ---------- Floating WhatsApp ---------- */
+    .wa-float {
+      position: fixed;
+      right: 20px;
+      bottom: 90px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      font-size: 1.9rem;
+      display: grid;
+      place-items: center;
+      z-index: 1500;
+      box-shadow: 0 10px 28px -6px rgba(37, 211, 102, .8);
+      animation: waPulse 2s infinite
+    }
+
+    .wa-float:hover {
+      color: #fff;
+      transform: scale(1.1)
+    }
+
+    @keyframes waPulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, .6)
+      }
+
+      70% {
+        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0)
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0)
+      }
+    }
+
+    @media(min-width:992px) {
+      .wa-float {
+        bottom: 28px
+      }
+    }
+
+    /* ---------- Sticky mobile bar ---------- */
+    .mobile-cta {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1600;
+      display: flex;
+      gap: 10px;
+      padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+      background: rgba(11, 18, 48, .96);
+      backdrop-filter: blur(10px);
+      transform: translateY(110%);
+      transition: transform .35s
+    }
+
+    .mobile-cta.show {
+      transform: translateY(0)
+    }
+
+    .mobile-cta .btn {
+      flex: 1;
+      padding: 12px;
+      font-size: .95rem
+    }
+
+    .mobile-cta .btn i {
+      margin-right: 6px
+    }
+
+    /* ---------- Reveal animation ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity .8s cubic-bezier(.2, .7, .2, 1) var(--d, 0s), transform .8s cubic-bezier(.2, .7, .2, 1) var(--d, 0s)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none
+      }
+
+      html {
+        scroll-behavior: auto
+      }
+    }
+
+    /* ---------- Tablet/mobile navigation and responsive refinements ---------- */
+    .navbar-toggler {
+      width: 48px;
+      height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      color: #fff;
+      box-shadow: none !important;
+      position: relative;
+      z-index: 1072;
+    }
+
+    .hamburger-icon {
+      width: 28px;
+      height: 22px;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .hamburger-icon span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      border-radius: 3px;
+      background: currentColor;
+      transform-origin: center;
+      transition: transform .28s ease, opacity .2s ease, width .28s ease;
+    }
+
+    .navbar-toggler[aria-expanded="true"] .hamburger-icon span:first-child {
+      transform: translateY(9.5px) rotate(45deg);
+    }
+
+    .navbar-toggler[aria-expanded="true"] .hamburger-icon span:nth-child(2) {
+      opacity: 0;
+      width: 0;
+    }
+
+    .navbar-toggler[aria-expanded="true"] .hamburger-icon span:last-child {
+      transform: translateY(-9.5px) rotate(-45deg);
+    }
+
+    .nav-menu-backdrop {
+      display: none;
+    }
+
+    .mobile-nav-brand {
+      display: none;
+    }
+
+    @media (max-width: 991.98px) {
+      .site-nav {
+        background: rgba(11, 18, 48, .97);
+        padding: 8px 0;
+        z-index: 1071;
+      }
+
+      .site-nav .container-fluid {
+        width: min(100% - 24px, 1460px);
+      }
+
+      .brand-logo {
+        height: clamp(38px, 7vw, 46px);
+        max-width: min(52vw, 200px);
+      }
+
+      .site-nav .navbar-collapse {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: min(84vw, 350px);
+        height: 100vh !important;
+        height: 100dvh !important;
+        max-height: 100dvh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        padding: 88px 22px 28px;
+        background: var(--navy);
+        box-shadow: 12px 0 36px rgba(0, 0, 0, .32);
+        z-index: 1071;
+        transform: translateX(-105%);
+        visibility: hidden;
+        transition: transform .32s cubic-bezier(.22, .75, .25, 1), visibility .32s ease;
+        will-change: transform;
+      }
+
+      .mobile-nav-brand {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        right: 72px;
+        height: 48px;
+        z-index: 2;
+      }
+
+      .mobile-nav-brand img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        height: 44px;
+        object-fit: contain;
+        object-position: left center;
+        background: #fff;
+        border-radius: 8px;
+        padding: 4px 8px;
+      }
+
+      .site-nav .navbar-collapse.show,
+      .site-nav .navbar-collapse.collapsing {
+        visibility: visible;
+        transform: translateX(0);
+      }
+
+      .site-nav .navbar-collapse.nav-menu-closing {
+        transform: translateX(-105%) !important;
+        visibility: hidden !important;
+        transition: none !important;
+      }
+
+      .site-nav .navbar-collapse.collapsing {
+        height: 100vh !important;
+        height: 100dvh !important;
+        transition: transform .32s cubic-bezier(.22, .75, .25, 1), visibility .32s ease;
+      }
+
+      .site-nav .navbar-nav {
+        gap: 4px !important;
+        margin: 0 0 18px !important;
+      }
+
+      .site-nav .nav-link {
+        display: block;
+        padding: 13px 10px;
+        font-size: clamp(.95rem, 2.3vw, 1.05rem);
+        border-radius: 8px;
+        overflow-wrap: anywhere;
+      }
+
+      .site-nav .navbar-collapse .btn-cta {
+        width: 100%;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        white-space: normal;
+      }
+
+      .nav-menu-backdrop {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, .52);
+        z-index: 1070;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .32s ease, visibility .32s ease;
+      }
+
+      .nav-menu-backdrop.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      body.nav-menu-open {
+        overflow: hidden;
+        touch-action: none;
+      }
+
+      /* Keep the fixed offer banner from overlapping the mobile navigation drawer */
+      body.nav-menu-open .offer-banner {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 112px 0 64px;
+      }
+
+      .hero-title {
+        font-size: clamp(2rem, 5.4vw, 3.3rem);
+        overflow-wrap: anywhere;
+      }
+
+      .form-card {
+        padding: 30px clamp(18px, 3vw, 28px) 24px;
+      }
+
+      .course-card,
+      .feature-card,
+      .stat-card,
+      .step {
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+
+      .course-card {
+        padding: 50px 22px 22px 22px;
+      }
+
+      .gallery img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .accordion-button {
+        gap: 12px;
+        padding: 16px;
+        font-size: clamp(.9rem, 2.2vw, 1rem);
+        text-align: left;
+      }
+
+      .site-footer {
+        padding: 38px 0 calc(94px + env(safe-area-inset-bottom));
+      }
+
+      .footer-logo {
+        display: block;
+        width: min(190px, 68vw);
+        height: auto;
+        max-height: 62px;
+        object-fit: contain;
+        margin-inline: auto;
+      }
+
+      .mobile-cta {
+        gap: 8px;
+        padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+      }
+
+      .mobile-cta .btn {
+        min-width: 0;
+        min-height: 44px;
+        padding: 12px 8px;
+        font-size: clamp(.78rem, 2.5vw, .95rem);
+        white-space: normal;
+      }
+
+      .wa-float {
+        right: 14px;
+        bottom: calc(82px + env(safe-area-inset-bottom));
+        width: 50px;
+        height: 50px;
+        font-size: 1.65rem;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .container-fluid {
+        width: min(100% - 24px, 1460px);
+      }
+
+      .section-pad {
+        padding: 48px 0;
+      }
+
+      .hero {
+        padding: 100px 0 54px;
+      }
+
+      .hero-title {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        line-height: 1.15;
+      }
+
+      .hero-sub {
+        font-size: .96rem;
+      }
+
+      .badge-pill {
+        max-width: 100%;
+        padding: 7px 12px;
+        font-size: .72rem;
+        margin-top: 20px;
+      }
+
+      .hero-points {
+        grid-template-columns: 1fr;
+        gap: 9px;
+      }
+
+      .trust-row {
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .avatars span {
+        width: 34px;
+        height: 34px;
+      }
+
+      .form-card {
+        border-radius: 18px;
+        padding: 28px 16px 20px;
+      }
+
+      .form-ribbon {
+        right: 12px;
+        font-size: .68rem;
+        max-width: calc(100% - 24px);
+      }
+
+      .form-card .form-control,
+      .form-card .form-select {
+        min-width: 0;
+        font-size: 16px;
+      }
+
+      .btn-lg {
+        --bs-btn-font-size: .95rem;
+        --bs-btn-padding-y: .7rem;
+        --bs-btn-padding-x: 1rem;
+      }
+
+      .stat-card {
+        padding: 22px 10px;
+      }
+
+      .stat-num {
+        font-size: clamp(1.5rem, 6vw, 2.1rem);
+        overflow-wrap: anywhere;
+      }
+
+      .stat-text {
+        font-size: clamp(.9rem, 3.6vw, 1.2rem);
+      }
+
+      .course-card {
+        padding: 50px 18px 18px 18px;
+      }
+
+      .course-card h3 {
+        font-size: 1.08rem;
+      }
+
+      .feature-card {
+        padding: 18px;
+      }
+
+      .step {
+        padding: 22px 16px;
+      }
+
+      .cta-band {
+        padding: 54px 0;
+      }
+
+      .section-head {
+        margin-bottom: 32px;
+      }
+
+      .eyebrow {
+        font-size: .72rem;
+      }
+
+      .marquee-track,
+      .marquee-track span {
+        gap: 28px;
+      }
+
+      .accordion-body {
+        padding: 16px;
+        overflow-wrap: anywhere;
+      }
+
+      .site-footer p {
+        overflow-wrap: anywhere;
+        font-size: .8rem;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .brand-logo {
+        max-width: 48vw;
+      }
+
+      .mobile-cta .btn {
+        font-size: .72rem;
+      }
+
+      .hero-title {
+        font-size: 1.7rem;
+      }
+
+      .form-card {
+        padding-inline: 13px;
+      }
+    }
+
+    /* Course card curriculum dropdowns */
+    .course-card {
+      position: relative;
+      padding-bottom: 58px;
+    }
+
+    .course-details-toggle {
+      position: absolute;
+      right: 16px;
+      bottom: 14px;
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 0;
+      border-radius: 50%;
+      color: #fff;
+      background: linear-gradient(135deg, var(--blue), var(--navy));
+      box-shadow: 0 5px 14px rgba(47, 107, 255, .25);
+      cursor: pointer;
+      transition: transform .25s ease, background .25s ease;
+      z-index: 2;
+    }
+
+    .course-details-toggle:hover {
+      background: linear-gradient(135deg, var(--orange), #ff4d24);
+    }
+
+    .course-details-toggle i {
+      font-size: 1.1rem;
+      transition: transform .25s ease;
+    }
+
+    .course-details-toggle[aria-expanded="true"] i {
+      transform: rotate(180deg);
+    }
+
+    .course-details-panel {
+      margin-top: 18px;
+      overflow: hidden;
+      border-radius: 14px;
+      animation: coursePanelIn .28s ease both;
+    }
+
+    .course-details-panel[hidden] {
+      display: none !important;
+    }
+
+    .course-details-panel img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      border: 1px solid rgba(47, 107, 255, .15);
+    }
+
+    @keyframes coursePanelIn {
+      from {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media(max-width:575.98px) {
+      .course-card {
+        padding-bottom: 56px;
+      }
+
+      .course-details-toggle {
+        right: 12px;
+        bottom: 12px;
+        width: 36px;
+        height: 36px;
+      }
+
+      .course-details-panel {
+        margin-top: 14px;
+      }
+    }
+
+    /* ---------- Responsive booking form popup ---------- */
+    .booking-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 3000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .25s ease, visibility .25s ease;
+    }
+
+    .booking-modal.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .booking-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(5, 10, 30, .78);
+      backdrop-filter: blur(5px);
+    }
+
+    .booking-modal-dialog {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 560px);
+      max-height: min(92vh, 850px);
+      max-height: min(92dvh, 850px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      background: #fff;
+      color: var(--ink);
+      border: 0;
+      border-top: 5px solid var(--orange);
+      border-radius: 24px;
+      padding: 10px 24px 10px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .4);
+      transform: translateY(14px);
+      transition: transform .25s ease;
+    }
+
+    .booking-modal.is-open .booking-modal-dialog {
+      transform: translateY(0);
+    }
+
+    .booking-modal-close {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border: 0;
+      border-radius: 50%;
+      background: #f0f3ff;
+      color: var(--navy);
+      font-size: 1.8rem;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .booking-modal .form-card {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      background: transparent;
+    }
+
+    .booking-modal .form-card h2 {
+      padding-right: 42px;
+    }
+
+    .booking-modal .form-ribbon {
+      top: -14px;
+      right: 0px;
+    }
+
+    body.booking-modal-open {
+      overflow: hidden;
+    }
+
+    @media (max-width: 575.98px) {
+      .booking-modal {
+        padding: 10px;
+      }
+
+      .booking-modal-dialog {
+        width: 100%;
+        max-height: calc(100vh - 20px);
+        max-height: calc(100dvh - 20px);
+        padding: 26px 16px 18px;
+        border-radius: 18px;
+      }
+
+      .booking-modal .form-card .form-control,
+      .booking-modal .form-card .form-select {
+        font-size: 16px;
+      }
+
+      .booking-modal .form-ribbon {
+        top: -25px;
+        right: 40px;
+        max-width: calc(100% - 10px);
+      }
+    }
+
+    \n
+  </style>
+
+  <!-- Meta (Facebook) Pixel — same Pixel ID used on your current page -->
+  <script>
+    !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '761056115624054');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=761056115624054&ev=PageView&noscript=1" alt=""></noscript>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-T4VTVP7S');</script>
+</head>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4VTVP7S" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Responsive booking form popup -->
+  <div class="booking-modal" id="bookingModal" aria-hidden="true">
+    <div class="booking-modal-backdrop" data-booking-close></div>
+    <div class="booking-modal-dialog" role="dialog" aria-modal="true" aria-label="Reserve Your Demo Class">
+      <button type="button" class="booking-modal-close" aria-label="Close booking form"
+        data-booking-close>&times;</button>
+      <div id="bookingModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ================= 10% OFF LIMITED-TIME OFFER ================= -->
+  <div class="offer-banner" role="status" aria-label="Limited-time 10 percent discount offer">
+    <span><i class="bi bi-stars me-1" aria-hidden="true"></i><strong>LIMITED-TIME OFFER: FLAT 10% OFF</strong></span>
+    <span>Offer ends in <span class="offer-timer" id="offerTimer" aria-live="off"><span class="time-unit"
+          id="offerHours">03</span>:<span class="time-unit" id="offerMinutes">00</span>:<span class="time-unit"
+          id="offerSeconds">00</span></span></span>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav" id="siteNav">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+        <img
+          src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/aba24900-3280-451b-a006-9f06ed38f503.png"
+          alt="CNC Web World" class="brand-logo"
+          onerror="this.onerror=null;this.src='https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/aba24900-3280-451b-a006-9f06ed38f503.png'">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <a class="mobile-nav-brand" href="#top" aria-label="CNC Web World home">
+          <img
+            src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/aba24900-3280-451b-a006-9f06ed38f503.png"
+            alt="CNC Web World">
+        </a>
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why">Why Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
+          <li class="nav-item"><a class="nav-link" href="#placed">Placed Students</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        </ul>
+        <div class="d-flex gap-2 flex-column flex-lg-row">
+          <a href="#enroll" class="btn btn-cta btn-sm px-4" data-track="nav-demo"><i
+              class="bi bi-calendar-check me-1"></i> Book Free Demo</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-menu-backdrop" id="navMenuBackdrop" aria-hidden="true"></div>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="top">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- floating tech chips -->
+    <span class="float-chip chip-1"><i class="bi bi-braces"></i> &lt;/&gt;</span>
+    <span class="float-chip chip-2"><i class="bi bi-cpu"></i> AI</span>
+    <span class="float-chip chip-3"><i class="bi bi-database"></i> SQL</span>
+    <span class="float-chip chip-4"><i class="bi bi-shield-lock"></i> Cyber</span>
+
+    <div class="container-fluid position-relative">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <span class="badge-pill reveal"><span class="dot"></span> Admissions Open &bull; Nerul, Navi Mumbai &bull;
+            Online / Offline</span>
+
+          <h1 class="hero-title reveal" style="--d:.1s">
+            Become a <span class="gradient-text" id="typed">Java Full Stack</span><span class="caret">|</span><br>
+            Developer &amp; Get <span class="underline-anim">Job-Ready</span>
+          </h1>
+
+          <p class="hero-sub reveal" style="--d:.2s">
+            One-on-one, hands-on IT training with real industry projects, mock interviews and
+            <strong>100% job assistance</strong>. Join <strong>10,000+</strong> students who started their IT career
+            with us.
+          </p>
+
+          <ul class="hero-points reveal" style="--d:.3s">
+            <li><i class="bi bi-check-circle-fill"></i> Personal one-on-one attention</li>
+            <li><i class="bi bi-check-circle-fill"></i> Live industry projects</li>
+            <li><i class="bi bi-check-circle-fill"></i> Resume + mock interview coaching</li>
+            <li><i class="bi bi-check-circle-fill"></i> 750+ hiring partners</li>
+          </ul>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 reveal" style="--d:.4s">
+            <a href="#enroll" class="btn btn-cta btn-lg pulse-btn" data-track="hero-demo">
+              <i class="bi bi-rocket-takeoff-fill me-2"></i> Book Free Demo Class
+            </a>
+            <a href="#" class="btn btn-wa btn-lg" data-wa data-track="hero-whatsapp" target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp me-2"></i> Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="trust-row reveal" style="--d:.5s">
+            <div class="avatars">
+              <span>A</span><span>R</span><span>S</span><span>P</span>
+            </div>
+            <div>
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <small>Trusted by 10,000+ students</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero form -->
+        <div class="col-lg-5">
+          <div class="form-card reveal" style="--d:.3s" id="enroll">
+            <div class="form-ribbon"><i class="bi bi-lightning-charge-fill"></i> Limited seats per batch</div>
+            <h2 class="h4 fw-bold mb-1">Reserve Your Demo Class</h2>
+            <p class="text-muted small mb-3">Fill in 30 seconds. Our counsellor will call you back.</p>
+
+            <form class="lead-form needs-validation" novalidate data-form>
+              <div class="mb-3">
+                <label class="form-label" for="name">Full Name</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-person"></i></span>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required
+                    minlength="2">
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="phone">Mobile / WhatsApp Number</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="10-digit mobile number"
+                    required pattern="[6-9][0-9]{9}" maxlength="10" inputmode="numeric">
+                  <div class="invalid-feedback">Enter a valid 10-digit Indian mobile number.</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="email">Email ID</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com"
+                    required autocomplete="email" inputmode="email">
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="course">Course Interested In</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-mortarboard"></i></span>
+                  <select class="form-select" id="course" name="course" required>
+                    <option value="" selected disabled>Select a course</option>
+                    <option>Data Analytics</option>
+                    <option>Data Science</option>
+                    <option>AI / ML</option>
+                    <option>Cyber Security</option>
+                    <option>Java Full Stack</option>
+                    <option>Python Full Stack</option>
+                    <option>Software Testing with Playwright</option>
+                    <option>.NET</option>
+                    <option>MERN Stack</option>
+                    <option>React JS</option>
+                    <option>Frontend Development</option>
+                    <option>UI / UX</option>
+                    <option>Software Testing</option>
+                    <option>DSA</option>
+                    <option>C / C++</option>
+                  </select>
+                  <div class="invalid-feedback">Please choose a course.</div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-cta btn-lg w-100 pulse-btn" id="submitBtn">
+                <span class="btn-label"><i class="bi bi-send-fill me-2"></i> Book My Free Demo</span>
+                <span class="btn-loading d-none"><span
+                    class="spinner-border spinner-border-sm me-2"></span>Submitting…</span>
+              </button>
+              <p class="form-note"><i class="bi bi-shield-check"></i> 100% free &bull; No spam &bull; Your details are
+                safe</p>
+            </form>
+
+            <div class="success-box d-none" id="successBox">
+              <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+              <h3 class="h4 fw-bold">You're in! 🎉</h3>
+              <p class="text-muted mb-3">Thanks <strong id="successName"></strong>. Our counsellor will contact you
+                shortly to confirm your free demo slot.</p>
+              <a href="#" class="btn btn-wa w-100" data-wa data-track="success-whatsapp" target="_blank"
+                rel="noopener"><i class="bi bi-whatsapp me-2"></i> Get faster reply on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint d-none d-lg-flex"><span></span></div>
+  </header>
+
+  <!-- ================= MARQUEE ================= -->
+  <section class="marquee-wrap" aria-label="Technologies we teach">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Java</span><span>Python</span><span>React
+          JS</span><span>Node.js</span><span>MongoDB</span><span>PHP</span><span>.NET</span><span>SQL</span><span>Power
+          BI</span><span>Machine Learning</span><span>Cyber
+          Security</span><span>UI/UX</span><span>Playwright</span><span>DSA</span><span>C / C++</span>
+        <span>Java</span><span>Python</span><span>React
+          JS</span><span>Node.js</span><span>MongoDB</span><span>PHP</span><span>.NET</span><span>SQL</span><span>Power
+          BI</span><span>Machine Learning</span><span>Cyber
+          Security</span><span>UI/UX</span><span>Playwright</span><span>DSA</span><span>C / C++</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="stats section-pad" id="results">
+    <div class="container-fluid">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3 reveal">
+          <div class="stat-card">
+            <i class="bi bi-people-fill"></i>
+            <div class="stat-num"><span class="counter" data-target="10000">0</span>+</div>
+            <p>Students Trained</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 reveal" style="--d:.1s">
+          <div class="stat-card">
+            <i class="bi bi-building-check"></i>
+            <div class="stat-num"><span class="counter" data-target="750">0</span>+</div>
+            <p>Placement Partners</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 reveal" style="--d:.2s">
+          <div class="stat-card">
+            <i class="bi bi-briefcase-fill"></i>
+            <div class="stat-num"><span class="counter" data-target="8500">0</span></div>
+            <p>Students Placed</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 reveal" style="--d:.3s">
+          <div class="stat-card">
+            <i class="bi bi-wifi"></i>
+            <div class="stat-num stat-text">Online + Offline</div>
+            <p>Flexible Learning Modes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COURSES ================= -->
+  <section class="courses section-pad" id="courses">
+    <div class="container-fluid">
+      <div class="section-head text-center reveal">
+        <span class="eyebrow">Our Courses</span>
+        <h2>Pick Your Path. <span class="gradient-text">Master the Skills.</span></h2>
+        <p>15 industry-aligned programs built around real projects, not just theory.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-bar-chart-line-fill"></i></div>
+            <h3>Mastery in Data Analytics</h3>
+            <p>Excel, SQL, Power BI &amp; Python to turn raw data into business decisions.</p>
+            <a href="#enroll" class="course-link" data-course="Data Analytics">Book Now <i
+                class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in Data Analytics course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/fecba90e-1445-4009-9cbe-cdebe2a0a709.png"
+                alt="Mastery in Data Analytics course curriculum, tools, projects and career opportunities"
+                loading="lazy"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="--d:.05s">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h3>Mastery in Data Science</h3>
+            <p>Statistics, ML models and data storytelling for data-driven roles.</p>
+            <a href="#enroll" class="course-link" data-course="Data Science">Book Now <i
+                class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in Data Science course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/931d4d45-cbb2-4a20-a6c1-5e66a7632ca8.png"
+                alt="Mastery in Data Science course curriculum, tools, projects and career opportunities"
+                loading="lazy"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="--d:.1s">
+          <div class="course-card hot">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <span class="hot-tag"><i class="bi bi-fire"></i> In Demand</span>
+            <div class="course-icon"><i class="bi bi-robot"></i></div>
+            <h3>Mastery in AI / ML</h3>
+            <p>Build intelligent apps with machine learning and deep learning.</p>
+            <a href="#enroll" class="course-link" data-course="AI / ML">Book Now <i class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in AI / ML course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/23a9b983-f20b-49ca-81ea-342f1bab5d2a.png"
+                alt="Mastery in AI / ML course curriculum, tools, projects and career opportunities" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-shield-lock-fill"></i></div>
+            <h3>Mastery in Cyber Security</h3>
+            <p>Ethical hacking, network security and threat defence fundamentals.</p>
+            <a href="#enroll" class="course-link" data-course="Cyber Security">Book Now <i
+                class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in Cyber Security course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/212ebf52-75f0-49af-8749-1f72cb47b1da.png"
+                alt="Mastery in Cyber Security course curriculum, tools, projects and career opportunities"
+                loading="lazy"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="--d:.05s">
+          <div class="course-card hot">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <span class="hot-tag"><i class="bi bi-fire"></i> In Demand</span>
+            <div class="course-icon"><i class="bi bi-cup-hot-fill"></i></div>
+            <h3>Mastery in Java Full Stack</h3>
+            <p>Core Java, Spring Boot, REST APIs, databases and frontend, end to end.</p>
+            <a href="#enroll" class="course-link" data-course="Java Full Stack">Book Now <i
+                class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in Java Full Stack course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/06b46987-0e4b-4d3c-994f-e94d0e187fe6.png"
+                alt="Mastery in Java Full Stack course curriculum, tools, projects and career opportunities"
+                loading="lazy"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="--d:.1s">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-filetype-py"></i></div>
+            <h3>Mastery in Python Full Stack</h3>
+            <p>Python, Django, APIs and modern frontend to ship complete web apps.</p>
+            <a href="#enroll" class="course-link" data-course="Python Full Stack">Book Now <i
+                class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in Python Full Stack course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/e2b715f3-c123-4707-aeee-fde04f6e7e2d.png"
+                alt="Mastery in Python Full Stack course curriculum, tools, projects and career opportunities"
+                loading="lazy"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-layers-fill"></i></div>
+            <h3>Mastery in MERN</h3>
+            <p>MongoDB, Express, React and Node.js — the most hired JS stack.</p>
+            <a href="#enroll" class="course-link" data-course="MERN Stack">Book Now <i
+                class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in MERN course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/4affab88-d7ef-4da6-a6a3-802730f97145.png"
+                alt="Mastery in MERN course curriculum, tools, projects and career opportunities" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="--d:.05s">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-filetype-jsx"></i></div>
+            <h3>Mastery in React JS</h3>
+            <p>Hooks, state management and component-driven UI development.</p>
+            <a href="#enroll" class="course-link" data-course="React JS">Book Now <i class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in React JS course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/7b6e76d2-d658-461f-b1b3-6e8a09b6733b.png"
+                alt="Mastery in React JS course curriculum, tools, projects and career opportunities" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="--d:.1s">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-robot"></i></div>
+            <h3>Mastery in Software Testing with Playwright</h3>
+            <p>Automate browser tests with Playwright.</p>
+            <a href="#enroll" class="course-link" data-course="Software Testing with Playwright">Book Now <i
+                class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in Software Testing with Playwright course details"><i
+                class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/55fb963f-3883-4226-89f0-00a914046c5e.png"
+                alt="Mastery in Software Testing with Playwright course curriculum, tools, projects and career opportunities"
+                loading="lazy"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-microsoft"></i></div>
+            <h3>Mastery in .NET</h3>
+            <p>C#, ASP.NET, SQL Server and enterprise application development.</p>
+            <a href="#enroll" class="course-link" data-course=".NET">Book Now <i class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in .NET course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/d8b6c7d5-9be8-4841-b2e8-ba6f1d8eb716.png"
+                alt="Mastery in .NET course curriculum, tools, projects and career opportunities" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="--d:.05s">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-code-slash"></i></div>
+            <h3>Mastery in Frontend</h3>
+            <p>HTML, CSS, JavaScript and responsive design for modern websites.</p>
+            <a href="#enroll" class="course-link" data-course="Frontend Development">Book Now <i
+                class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in Frontend course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/66a0c85c-9137-49ba-b30a-5da121fe1d56.png"
+                alt="Mastery in Frontend course curriculum, tools, projects and career opportunities" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="--d:.1s">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-palette-fill"></i></div>
+            <h3>Mastery in UI / UX</h3>
+            <p>Wireframes, prototypes and user research to design products people love.</p>
+            <a href="#enroll" class="course-link" data-course="UI / UX">Book Now <i class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in UI / UX course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/f2fcc7ef-a3f2-4db8-b308-a16aeefcee0f.png"
+                alt="Mastery in UI / UX course curriculum, tools, projects and career opportunities" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-bug-fill"></i></div>
+            <h3>Mastery in Software Testing</h3>
+            <p>Manual + automation testing with Selenium, test cases and bug tracking.</p>
+            <a href="#enroll" class="course-link" data-course="Software Testing">Book Now <i
+                class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in Software Testing course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/31c3d736-3f0a-4bcd-b284-29fd9ee39436.png"
+                alt="Mastery in Software Testing course curriculum, tools, projects and career opportunities"
+                loading="lazy"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="--d:.05s">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-diagram-3-fill"></i></div>
+            <h3>Mastery in DSA</h3>
+            <p>Build problem-solving skills with arrays, linked lists, stacks, queues, trees, graphs, sorting and
+              searching algorithms.</p>
+            <a href="#enroll" class="course-link" data-course="DSA">Book Now <i class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in DSA course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/42449bc5-7a63-430b-bf99-6a83c67dc1ca.png"
+                alt="Mastery in DSA course curriculum, data structures, algorithms, practice and projects"
+                loading="lazy"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="--d:.1s">
+          <div class="course-card">
+            <span class="ai-powered-tag"><i class="bi bi-stars"></i> AI-Powered</span>
+            <div class="course-icon"><i class="bi bi-terminal-fill"></i></div>
+            <h3>Mastery in C / C++</h3>
+            <p>Programming fundamentals, data structures and problem solving.</p>
+            <a href="#enroll" class="course-link" data-course="C / C++">Book Now <i class="bi bi-arrow-right"></i></a>
+            <button class="course-details-toggle" type="button" aria-expanded="false"
+              aria-label="Show Mastery in C / C++ course details"><i class="bi bi-chevron-down"></i></button>
+            <div class="course-details-panel" hidden><img
+                src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/3953794c-aa9a-4ace-97ec-87ba85bb2c84.png"
+                alt="Mastery in C / C++ course curriculum, tools, projects and career opportunities" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+  <section class="why section-pad" id="why">
+    <div class="container-fluid">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5 reveal">
+          <span class="eyebrow">Why CNC Web World</span>
+          <h2 class="mt-2">Practical Learning for <span class="gradient-text">Real-World Success</span></h2>
+          <p class="lead-text">Many graduates lack the practical skills the IT industry demands. We close that gap with
+            a unique <strong>one-on-one training model</strong>, personal attention, in-depth learning and real-time
+            experience, so you walk in to interviews confident and job-ready.</p>
+          <a href="#enroll" class="btn btn-cta btn-lg mt-2" data-track="why-demo"><i
+              class="bi bi-calendar-check me-2"></i> Book Free Demo Class</a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-sm-6 reveal">
+              <div class="feature-card"><i class="bi bi-laptop"></i>
+                <h4>Technical Training</h4>
+                <p>Strong fundamentals to advanced, taught hands-on.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 reveal" style="--d:.05s">
+              <div class="feature-card"><i class="bi bi-chat-heart"></i>
+                <h4>Soft Skills Training</h4>
+                <p>Communication and confidence for the workplace.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 reveal" style="--d:.1s">
+              <div class="feature-card"><i class="bi bi-kanban"></i>
+                <h4>Industry Project Experience</h4>
+                <p>Work on real projects to build a portfolio.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 reveal" style="--d:.15s">
+              <div class="feature-card"><i class="bi bi-mic"></i>
+                <h4>Mock Interview Coaching</h4>
+                <p>Practice rounds with feedback until you're ready.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 reveal" style="--d:.2s">
+              <div class="feature-card"><i class="bi bi-file-earmark-person"></i>
+                <h4>Professional Resume Building</h4>
+                <p>Recruiter-friendly resume and LinkedIn guidance.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 reveal" style="--d:.25s">
+              <div class="feature-card"><i class="bi bi-patch-check"></i>
+                <h4>100% Job Assistance</h4>
+                <p>Access to 750+ hiring partners and interview calls.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="process section-pad">
+    <div class="container-fluid">
+      <div class="section-head text-center reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2>Your Journey to a <span class="gradient-text">Tech Career</span> in 4 Steps</h2>
+      </div>
+      <div class="row g-4 steps">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="step">
+            <div class="step-no">1</div>
+            <h4>Book Free Demo</h4>
+            <p>Attend a free class and meet your trainer.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.1s">
+          <div class="step">
+            <div class="step-no">2</div>
+            <h4>Learn One-on-One</h4>
+            <p>Hands-on training at your pace, online or offline.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.2s">
+          <div class="step">
+            <div class="step-no">3</div>
+            <h4>Build Real Projects</h4>
+            <p>Industry projects, mock interviews and resume prep.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal" style="--d:.3s">
+          <div class="step">
+            <div class="step-no">4</div>
+            <h4>Get Placed</h4>
+            <p>Interview calls from our hiring partner network.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA BAND ================= -->
+  <section class="cta-band">
+    <div class="container-fluid text-center reveal">
+      <h2>Your IT Career Starts With One Free Class.</h2>
+      <p>Seats are limited because we keep batches small for one-on-one attention.</p>
+      <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+        <a href="#enroll" class="btn btn-light btn-lg fw-bold text-primary-emphasis" data-track="band-demo"><i
+            class="bi bi-rocket-takeoff-fill me-2"></i> Book Free Demo Class</a>
+        <a href="#" class="btn btn-wa btn-lg" data-wa data-track="band-whatsapp" target="_blank" rel="noopener"><i
+            class="bi bi-whatsapp me-2"></i> WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PLACED STUDENTS ================= -->
+  <section class="placed section-pad" id="placed">
+    <div class="container-fluid">
+      <div class="section-head text-center reveal">
+        <span class="eyebrow">Success Stories</span>
+        <h2>Students <span class="gradient-text">Placed &amp; Hired</span> in Top Companies</h2>
+        <p>Real students. Real offers. Real careers.</p>
+      </div>
+
+      <div class="image-carousel" data-carousel="placed" aria-label="Placed image slider">
+        <button class="carousel-btn carousel-prev" type="button" aria-label="Previous image"><i
+            class="bi bi-chevron-left"></i></button>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <div class="gallery-slide"><img loading="lazy" alt="Placed student 1"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/4fc33e89b0a56b01770ae7a3406b1c08-4fc33e89b0a56b01770ae7a3406b1c08-5.webp">
+            </div>
+            <div class="gallery-slide"><img loading="lazy" alt="Placed student 2"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/87c061b1bf61ff39d728ced9d905d7b1-87c061b1bf61ff39d728ced9d905d7b1-1.webp">
+            </div>
+            <div class="gallery-slide"><img loading="lazy" alt="Placed student 3"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/3a6a545f39dd5b2e5a3a540a99ccdeca-3a6a545f39dd5b2e5a3a540a99ccdeca-2.webp">
+            </div>
+            <div class="gallery-slide"><img loading="lazy" alt="Placed student 4"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/8975fc81a2a41f89a2f47202b5f50318-8975fc81a2a41f89a2f47202b5f50318-3.webp">
+            </div>
+            <div class="gallery-slide"><img loading="lazy" alt="Placed student 5"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/55a2cf9d31b37b08fbe61a1aaba5420c-55a2cf9d31b37b08fbe61a1aaba5420c-4.webp">
+            </div>
+            <div class="gallery-slide"><img loading="lazy" alt="Placed student 6"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/df007d8301b2c754869bb9e921336c6c-df007d8301b2c754869bb9e921336c6c-6.webp">
+            </div>
+            <div class="gallery-slide"><img loading="lazy" alt="Placed student 7"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/566a699403fac5174b7f8997e4a9d26c-566a699403fac5174b7f8997e4a9d26c-7.webp">
+            </div>
+            <div class="gallery-slide"><img loading="lazy" alt="Placed student 8"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/5f519c8c016a2d154767ba4d4f8e5d34-5f519c8c016a2d154767ba4d4f8e5d34-8.webp">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" type="button" aria-label="Next image"><i
+            class="bi bi-chevron-right"></i></button>
+      </div>
+      <div class="text-center mt-5 reveal">
+        <a href="#enroll" class="btn btn-cta btn-lg" data-track="placed-demo"><i
+            class="bi bi-person-plus-fill me-2"></i> I Want to Be Next — Book Free Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="reviews section-pad">
+    <div class="container-fluid">
+      <div class="section-head text-center reveal">
+        <span class="eyebrow">Student Reviews</span>
+        <h2>What Our <span class="gradient-text">Students Say</span></h2>
+      </div>
+      <div class="image-carousel" data-carousel="reviews" aria-label="Reviews image slider">
+        <button class="carousel-btn carousel-prev" type="button" aria-label="Previous image"><i
+            class="bi bi-chevron-left"></i></button>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <div class="gallery-slide"><img loading="lazy" alt="Student review 1"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/07455a9fd4c37375273eaa4886a326f7-07455a9fd4c37375273eaa4886a326f7-11.webp">
+            </div>
+            <div class="gallery-slide"><img loading="lazy" alt="Student review 2"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/bbb64244f7110be28b7988c9a1941615-bbb64244f7110be28b7988c9a1941615-10.webp">
+            </div>
+            <div class="gallery-slide"><img loading="lazy" alt="Student review 3"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/99bf488dafaea7d75768f4b61bf59be9-99bf488dafaea7d75768f4b61bf59be9-9.webp">
+            </div>
+            <div class="gallery-slide"><img loading="lazy" alt="Student review 4"
+                src="https://storagev2.files-vault.com/uploads/blacklabel-647/sub-account-51283/funnel_builder/landing_pages/content/128743/aa03409b784b78f91cd13026a8533109-aa03409b784b78f91cd13026a8533109-1.webp">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" type="button" aria-label="Next image"><i
+            class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="faq section-pad" id="faq">
+    <div class="container-fluid">
+      <div class="section-head text-center reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions? <span class="gradient-text">We've Got Answers.</span></h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 reveal">
+          <div class="accordion" id="faqAcc">
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f1" aria-expanded="false" aria-controls="f1">Is the demo
+                  class really free?</button></h3>
+              <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Yes. The demo class is completely free with no obligation. It lets you meet
+                  the trainer and understand how the course works before deciding.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f2">Do I need prior coding experience?</button></h3>
+              <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">No. Our programs start from the basics, and one-on-one training means you
+                  learn at your own pace, whether you are a fresher, a graduate or switching careers.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f3">Are classes online or offline?</button></h3>
+              <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Both. You can attend offline at our Nerul centre or learn online from
+                  anywhere. Pick the mode that suits you.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f4">What placement support do you provide?</button></h3>
+              <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">You get resume building, mock interview coaching, soft skills training and
+                  job assistance with access to our network of 750+ placement partners.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f5">What is one-on-one training?</button></h3>
+              <div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Instead of crowded classrooms, you receive personal attention from your
+                  trainer, so doubts are cleared immediately and practical work is tailored to you.</div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <a href="#enroll" class="btn btn-cta btn-lg" data-track="faq-demo">Still Thinking? Book a Free Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container-fluid text-center">
+      <img
+        src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/aba24900-3280-451b-a006-9f06ed38f503.png"
+        alt="CNC Web World" class="footer-logo mb-3"
+        onerror="this.onerror=null;this.src='https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/abba0524-88f8-4dc2-acbe-8b9bbb5074b7/uploads/aba24900-3280-451b-a006-9f06ed38f503.png'">
+      <p class="mb-1">Empowering Careers Through Practical IT Training</p>
+      <p class="small mb-0">&copy; 2025 CNC WEB WORLD Technologies Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" class="wa-float" data-wa data-track="float-whatsapp" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+  <!-- Sticky mobile CTA bar -->
+  <div class="mobile-cta d-lg-none" id="mobileCta">
+    <a href="#" class="btn btn-wa" data-wa data-track="mobile-whatsapp" target="_blank" rel="noopener"><i
+        class="bi bi-whatsapp"></i> WhatsApp</a>
+    <a href="#enroll" class="btn btn-cta" data-track="mobile-demo"><i class="bi bi-calendar-check"></i> Free Demo</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    /* ============ CNC Web World — Landing Page Script ============ */
+
+    /* ---------- CONFIG: edit these ---------- */
+    const CONFIG = {
+      // WhatsApp number with country code, digits only (e.g. 919876543210)
+      WHATSAPP_NUMBER: "917400332999",
+      WHATSAPP_TEXT: "Hi CNC Web World, I saw your ad and want to book a FREE demo class.",
+      // POST endpoint that receives lead form submissions.
+      FORM_ENDPOINT: "https://myappzbackend.com/functions/v1/workflow-webhook/d10inc1p190v2o5k"
+    };
+
+    (function () {
+      "use strict";
+
+      const $ = (s, c = document) => c.querySelector(s);
+      const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
+      const track = (event, data) => { if (window.fbq) fbq("track", event, data || {}); };
+      const waLink = (text) =>
+        `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(text || CONFIG.WHATSAPP_TEXT)}`;
+
+      /* ---------- WhatsApp links ---------- */
+      $$("[data-wa]").forEach((a) => (a.href = waLink()));
+
+      /* ---------- Click tracking (Pixel "Contact" for WhatsApp, custom for others) ---------- */
+      $$("[data-track]").forEach((el) => {
+        el.addEventListener("click", () => {
+          const name = el.dataset.track;
+          if (name.includes("whatsapp")) track("Contact", { method: "whatsapp", placement: name });
+          else if (window.fbq) fbq("trackCustom", "CTAClick", { placement: name });
+        });
+      });
+
+      /* ---------- Navbar + progress + mobile bar ---------- */
+      const nav = $("#siteNav");
+      const progress = $("#scrollProgress");
+      const mobileCta = $("#mobileCta");
+      const hero = $("#top");
+      const onScroll = () => {
+        const y = window.scrollY;
+        nav.classList.toggle("scrolled", y > 40);
+        const h = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
+        if (mobileCta) mobileCta.classList.toggle("show", y > hero.offsetHeight * 0.6);
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+
+      /* ---------- Tablet/mobile slide menu controls ---------- */
+      const navMenu = $("#navMenu");
+      const navToggler = $(".navbar-toggler");
+      const navBackdrop = $("#navMenuBackdrop");
+
+      function syncNavMenu(open) {
+        if (!navMenu || !navToggler) return;
+        navToggler.setAttribute("aria-expanded", String(open));
+        navToggler.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+        document.body.classList.toggle("nav-menu-open", open && window.innerWidth < 992);
+        if (navBackdrop) navBackdrop.classList.toggle("show", open && window.innerWidth < 992);
+      }
+
+      if (navMenu && navToggler) {
+        navMenu.addEventListener("show.bs.collapse", () => {
+          navMenu.classList.remove("nav-menu-closing");
+          syncNavMenu(true);
+        });
+        navMenu.addEventListener("shown.bs.collapse", () => syncNavMenu(true));
+        navMenu.addEventListener("hide.bs.collapse", () => {
+          navMenu.classList.add("nav-menu-closing");
+          syncNavMenu(false);
+        });
+        navMenu.addEventListener("hidden.bs.collapse", () => {
+          syncNavMenu(false);
+          navMenu.classList.remove("nav-menu-closing");
+        });
+
+        if (navBackdrop) {
+          navBackdrop.addEventListener("click", () => {
+            bootstrap.Collapse.getOrCreateInstance(navMenu).hide();
+          });
+        }
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && navMenu.classList.contains("show") && window.innerWidth < 992) {
+            bootstrap.Collapse.getOrCreateInstance(navMenu).hide();
+            navToggler.focus();
+          }
+        });
+
+        $$("#navMenu a").forEach((a) =>
+          a.addEventListener("click", () => {
+            if (window.innerWidth < 992) bootstrap.Collapse.getOrCreateInstance(navMenu).hide();
+          })
+        );
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth >= 992) {
+            document.body.classList.remove("nav-menu-open");
+            if (navBackdrop) navBackdrop.classList.remove("show");
+          } else {
+            syncNavMenu(navMenu.classList.contains("show"));
+          }
+        });
+      }
+
+      /* ---------- Typed text ---------- */
+      const typedEl = $("#typed");
+      const words = ["Java Full Stack", "Python Full Stack", "MERN Stack", "Data Analyst", "AI / ML", "Cyber Security", "UI / UX"];
+      let wi = 0, ci = 0, deleting = false;
+      function type() {
+        const word = words[wi];
+        typedEl.textContent = word.substring(0, ci);
+        if (!deleting && ci < word.length) { ci++; setTimeout(type, 85); }
+        else if (!deleting) { deleting = true; setTimeout(type, 1500); }
+        else if (ci > 0) { ci--; setTimeout(type, 45); }
+        else { deleting = false; wi = (wi + 1) % words.length; setTimeout(type, 300); }
+      }
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) type();
+
+      /* ---------- Reveal on scroll ---------- */
+      const io = new IntersectionObserver(
+        (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }),
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      );
+      $$(".reveal").forEach((el) => io.observe(el));
+
+      /* ---------- Counters ---------- */
+      const fmt = (n) => n.toLocaleString("en-IN");
+      const counterIO = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const el = e.target, target = +el.dataset.target, dur = 1800, start = performance.now();
+          const tick = (t) => {
+            const p = Math.min((t - start) / dur, 1);
+            el.textContent = fmt(Math.floor(target * (1 - Math.pow(1 - p, 3))));
+            if (p < 1) requestAnimationFrame(tick); else el.textContent = fmt(target);
+          };
+          requestAnimationFrame(tick);
+          counterIO.unobserve(el);
+        });
+      }, { threshold: 0.5 });
+      $$(".counter").forEach((c) => counterIO.observe(c));
+
+      /* ---------- Booking popup: reuse the exact hero form ---------- */
+      const bookingModal = $("#bookingModal");
+      const bookingModalContent = $("#bookingModalContent");
+      const bookingFormCard = $("#enroll");
+      const bookingFormPlaceholder = document.createComment("Hero form location");
+      if (bookingFormCard && bookingFormCard.parentNode) {
+        bookingFormCard.parentNode.insertBefore(bookingFormPlaceholder, bookingFormCard);
+      }
+      let lastBookingTrigger = null;
+
+      const openBookingModal = (trigger) => {
+        if (!bookingModal || !bookingFormCard || !bookingModalContent) return;
+        lastBookingTrigger = trigger || null;
+        bookingModalContent.appendChild(bookingFormCard);
+        bookingModal.classList.add("is-open");
+        bookingModal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("booking-modal-open");
+        const nameInput = $("#name", bookingFormCard);
+        window.setTimeout(() => nameInput && nameInput.focus({ preventScroll: true }), 120);
+      };
+
+      const closeBookingModal = () => {
+        if (!bookingModal || !bookingFormCard) return;
+        if (bookingFormPlaceholder.parentNode) {
+          bookingFormPlaceholder.parentNode.insertBefore(bookingFormCard, bookingFormPlaceholder.nextSibling);
+        }
+        bookingModal.classList.remove("is-open");
+        bookingModal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("booking-modal-open");
+        if (lastBookingTrigger && typeof lastBookingTrigger.focus === "function") {
+          lastBookingTrigger.focus({ preventScroll: true });
+        }
+      };
+
+      $$('a[href="#enroll"]').forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          const courseName = link.dataset.course;
+          const sel = $("#course", bookingFormCard);
+          if (courseName && sel) {
+            const opt = Array.from(sel.options).find((o) => o.text === courseName || o.value === courseName);
+            if (opt) sel.value = opt.value || opt.text;
+          }
+          if (window.fbq && courseName) fbq("track", "ViewContent", { content_name: courseName });
+          openBookingModal(link);
+        });
+      });
+
+      $$("[data-booking-close]").forEach((el) => el.addEventListener("click", closeBookingModal));
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && bookingModal.classList.contains("is-open")) closeBookingModal();
+      });
+
+      /* ---------- Lead form ---------- */
+      const form = $("[data-form]");
+      const phone = $("#phone");
+      const email = $("#email");
+      phone.addEventListener("input", () => (phone.value = phone.value.replace(/\D/g, "").slice(0, 10)));
+      email.addEventListener("input", () => {
+        email.value = email.value.trim();
+      });
+      email.addEventListener("blur", () => {
+        email.value = email.value.trim();
+      });
+
+      form.addEventListener("submit", async (ev) => {
+        ev.preventDefault();
+        if (!form.checkValidity()) { form.classList.add("was-validated"); return; }
+
+        const formValues = new FormData(form);
+        const fullName = String(formValues.get("name") || "").trim();
+        const mobileNumber = String(formValues.get("phone") || "").replace(/\D/g, "");
+        const emailAddress = String(formValues.get("email") || "").trim().toLowerCase();
+        const selectedCourse = String(formValues.get("course") || "").trim();
+
+        const data = {
+          full_name: fullName,
+          phone_number: mobileNumber,
+          email: emailAddress,
+          course: selectedCourse,
+          page_url: window.location.href,
+          submitted_at: new Date().toISOString(),
+          source: "CNC Web World Landing Page",
+          form_name: "Free Demo Booking"
+        };
+        const params = new URLSearchParams(location.search);
+        ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "fbclid"].forEach((k) => {
+          if (params.get(k)) data[k] = params.get(k);
+        });
+
+        const btn = $("#submitBtn");
+        btn.disabled = true;
+        $(".btn-label", btn).classList.add("d-none");
+        $(".btn-loading", btn).classList.remove("d-none");
+
+        if (CONFIG.FORM_ENDPOINT) {
+          try {
+            fetch(CONFIG.FORM_ENDPOINT, {
+              method: "POST",
+              mode: "no-cors",
+              headers: { "Content-Type": "text/plain;charset=UTF-8" },
+              body: JSON.stringify(data),
+              keepalive: true
+            }).catch(() => {});
+          } catch (e) {}
+        }
+
+        track("Lead", { content_name: data.course });
+        if (window.dataLayer) dataLayer.push({ event: "lead_submit", course: data.course });
+
+        window.location.replace("https://metalp.cncwebworld.com/thankyou");
+        return;
+
+        form.classList.add("d-none");
+        $("#successName").textContent = data.full_name.split(" ")[0];
+        $("#successBox").classList.remove("d-none");
+
+        const msg = `Hi CNC Web World, I'm ${data.full_name}. I want to book a FREE demo for ${data.course}. My number: ${data.phone_number}. My email: ${data.email}`;
+        $$("#successBox [data-wa]").forEach((a) => (a.href = waLink(msg)));
+
+        // No endpoint configured → hand the lead to WhatsApp so it is never lost
+        if (!CONFIG.FORM_ENDPOINT) window.open(waLink(msg), "_blank");
+      });
+    })();
+
+
+  </script>
+
+  <script>
+    document.addEventListener('click', function (event) {
+      const toggle = event.target.closest('.course-details-toggle');
+      if (!toggle) return;
+
+      const card = toggle.closest('.course-card');
+      const panel = card && card.querySelector('.course-details-panel');
+      if (!panel) return;
+
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+      // Close every other course dropdown before opening the selected one.
+      document.querySelectorAll('#courses .course-details-toggle').forEach(function (otherToggle) {
+        if (otherToggle === toggle) return;
+        otherToggle.setAttribute('aria-expanded', 'false');
+        const otherPanel = otherToggle.closest('.course-card')?.querySelector('.course-details-panel');
+        if (otherPanel) otherPanel.hidden = true;
+      });
+
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      panel.hidden = isOpen;
+    });
+  </script>
+
+
+  <script>
+    /* ---------- Offer countdown: persists across refreshes ---------- */
+    (() => {
+      const storageKey = "cncOfferEndsAt";
+      const timer = document.getElementById("offerTimer");
+      const hoursEl = document.getElementById("offerHours");
+      const minutesEl = document.getElementById("offerMinutes");
+      const secondsEl = document.getElementById("offerSeconds");
+      if (!timer || !hoursEl || !minutesEl || !secondsEl) return;
+
+      let endAt = 0;
+      try {
+        endAt = Number(localStorage.getItem(storageKey));
+        if (!Number.isFinite(endAt) || endAt <= Date.now()) {
+          endAt = Date.now() + 3 * 60 * 60 * 1000;
+          localStorage.setItem(storageKey, String(endAt));
+        }
+      } catch (error) {
+        endAt = Date.now() + 3 * 60 * 60 * 1000;
+      }
+
+      const updateTimer = () => {
+        let remaining = Math.max(0, Math.floor((endAt - Date.now()) / 1000));
+        const hours = Math.floor(remaining / 3600);
+        const minutes = Math.floor((remaining % 3600) / 60);
+        const seconds = remaining % 60;
+        hoursEl.textContent = String(hours).padStart(2, "0");
+        minutesEl.textContent = String(minutes).padStart(2, "0");
+        secondsEl.textContent = String(seconds).padStart(2, "0");
+        if (remaining <= 0) window.clearInterval(timerInterval);
+      };
+      const timerInterval = window.setInterval(updateTimer, 1000);
+      updateTimer();
+    })();
+  </script>
+
+
+  <script>
+    (() => {
+      document.querySelectorAll('.image-carousel').forEach((carousel) => {
+        const track = carousel.querySelector('.carousel-track');
+        const viewport = carousel.querySelector('.carousel-viewport');
+        const prev = carousel.querySelector('.carousel-prev');
+        const next = carousel.querySelector('.carousel-next');
+        const originals = Array.from(track.children);
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        let visible = 3;
+        let index = 0;
+        let step = 0;
+        let timer = null;
+        let isAnimating = false;
+        let resizeTimeout;
+
+        const getVisible = () => window.matchMedia('(max-width: 575.98px)').matches
+          ? 1
+          : window.matchMedia('(max-width: 991.98px)').matches ? 2 : 3;
+
+        const setPosition = (animate = true) => {
+          track.style.transition = animate && !reducedMotion.matches ? 'transform .45s ease' : 'none';
+          track.style.transform = `translate3d(${-index * step}px, 0, 0)`;
+        };
+
+        const stopAutoplay = () => {
+          if (timer) window.clearInterval(timer);
+          timer = null;
+        };
+
+        const startAutoplay = () => {
+          stopAutoplay();
+          timer = window.setInterval(() => move(1), 8000);
+        };
+
+        const finishMove = () => {
+          const total = originals.length;
+          if (index >= visible + total) {
+            index = visible;
+            setPosition(false);
+          } else if (index < visible) {
+            index = visible + total - 1;
+            setPosition(false);
+          }
+          isAnimating = false;
+        };
+
+        const move = (direction) => {
+          if (isAnimating || !step || originals.length <= visible) return;
+          isAnimating = true;
+          index += direction;
+          setPosition(true);
+          if (track.style.transition === 'none') finishMove();
+        };
+
+        const setup = () => {
+          stopAutoplay();
+          track.querySelectorAll('[data-clone="true"]').forEach((node) => node.remove());
+          visible = Math.min(getVisible(), originals.length);
+
+          if (originals.length <= visible) {
+            index = 0;
+            step = 0;
+            track.style.transform = 'none';
+            track.style.transition = 'none';
+            return;
+          }
+
+          const before = originals.slice(-visible).map((slide) => {
+            const clone = slide.cloneNode(true);
+            clone.dataset.clone = 'true';
+            clone.setAttribute('aria-hidden', 'true');
+            return clone;
+          });
+          const after = originals.slice(0, visible).map((slide) => {
+            const clone = slide.cloneNode(true);
+            clone.dataset.clone = 'true';
+            clone.setAttribute('aria-hidden', 'true');
+            return clone;
+          });
+
+          before.forEach((clone) => track.insertBefore(clone, track.firstChild));
+          after.forEach((clone) => track.appendChild(clone));
+          index = visible;
+
+          requestAnimationFrame(() => {
+            const currentSlide = track.children[index];
+            if (!currentSlide) return;
+            const trackStyle = getComputedStyle(track);
+            const gap = parseFloat(trackStyle.columnGap || trackStyle.gap) || 0;
+            step = currentSlide.getBoundingClientRect().width + gap;
+            setPosition(false);
+            startAutoplay();
+          });
+        };
+
+        track.addEventListener('transitionend', (event) => {
+          if (event.target === track && event.propertyName === 'transform') finishMove();
+        });
+
+        prev.addEventListener('click', () => move(-1));
+        next.addEventListener('click', () => move(1));
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+        carousel.addEventListener('focusin', stopAutoplay);
+        carousel.addEventListener('focusout', (event) => {
+          if (!carousel.contains(event.relatedTarget)) startAutoplay();
+        });
+
+        window.addEventListener('resize', () => {
+          window.clearTimeout(resizeTimeout);
+          resizeTimeout = window.setTimeout(setup, 120);
+        });
+
+        setup();
+      });
+    })();
+  </script>
+
+</body>
+
+</html>
